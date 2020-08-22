@@ -1,0 +1,22 @@
+#Cards {
+    margin-top:10% !important;
+}
+
+.ComplainContainer {
+    width:80%;
+    margin-left: 10%;
+}
+
+.card-body{
+    text-align:left;
+}
+
+.label{
+    margin-top:15px;
+}
+.complain-heading:hover,.btn-link {
+    text-decoration: none !important;
+}
+.card-head{
+    text-align: left;
+}

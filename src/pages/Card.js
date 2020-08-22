@@ -12,10 +12,14 @@ class Card extends Component {
         this.state = {
             complains:[],
             cards:[],
-            status:["Not read","Pending","Resolved"]
+            status:["Not read","Pending","Resolved"],
+            dropdown_value: ""
         }
     }
    
+    handleInputChange = (event) => {
+        this.setState({ dropdown_value:event.target.value })
+    }
 
     BackgroundSelector =(n)=>{
         if(n%2 === 0)
@@ -57,7 +61,12 @@ class Card extends Component {
                                     </div>
                                     
                                     <div className= "col-lg-12">
-                                        <button className="btn btn-success Rectified float-right">Mark Rectified</button>
+                                        <select className="form-control" name="city" onChange={this.handleInputChange}>
+                                            <option selected>Select City</option>
+                                            <option value="1">city 1</option>
+                                            <option value="2">city 2</option>
+                                            <option value="3">city 3</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
